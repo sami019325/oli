@@ -1,0 +1,57 @@
+.trNormal{
+    position: relative;
+right: 4px;
+min-height: 55px;
+max-height: auto;
+left: 4px;
+
+background: #E8EDE2;
+
+}
+.tdDate{
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding-right: 10px;
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.tdExpense{
+    padding-left: 4px;
+    padding-right: 10px;
+    font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.tdAmount{
+    padding-left: 4px;
+    padding-right: 45px;
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.tdEditBtn{
+    position: absolute;
+    width: 35px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 9px;
+    text-align: center;
+    background: #55C867;
+    border-radius: 7px 0px 0px 7px; 
+}

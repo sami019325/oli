@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+    <script src="/js/button.js"></script>
+    <script src="/js/localhostsave.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+
+     <div class="bgOfHome" id="bgOfHome">  <!-- start of home section-->
+
+
+        <div class="areaOfTable">
+                             <table id="table"> 
+                                 <tr class="trNormal">
+                                     <td class="tdDate">03/01/2022</td>
+                                     <td class="tdExpense"> dhaka, tour er total cost lekha holo ekhane</td>
+                                     <td class="tdAmount"> 500000</td>
+                                     <td class="tdEditBtn"> ok</td>
+                                 </tr>
+                                 
+
+
+                               </table>
+         </div>
+
+
+         <div class="bgOfSearch">
+            <input class="searchEngine" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+             
+         </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="inputField" id="add">
+        <!-- start of add section-->
+        <p>Expense</p>
+        <textarea type="text" class="expense" id="expense" placeholder="Write details of the expense " required></textarea>
+        <img src="/bird.gif" alt="Animation" srcset="" class="animationOfAdd">
+        <p class="amountTitle">Amount</p>
+        <input type="number" class="amount" placeholder="Amount" id="amount" required>
+        
+
+
+
+        <!-- submit button submit button submit button submit button submit button submit button submit button submit button submit button submit button submit button -->
+       <button class="submitBtn" onclick="playanimation(), runPlusBtnV(), addrow(), Xvalue()" id="submitBtn"> Add </button>
+
+
+         
+
+       <!-- end of add section -->
+    </div>
+    <div class="bgBar">
+        <div class="nevigationBar"></div>
+        <div class="switchBar"></div>
+        <div class="switchBarFake">
+           <div class="addBtn" id="addBtn" onclick="showhome()"> </div> 
+           <div class="homeBtn" id="homeBtn" onclick="showAdd()"> </div> 
+           <img class="plusImg" onclick="showhome()" src="/fi_plus-circle.png" alt="" srcset="">
+           <img class="homeImg" onclick="showAdd()" src="/fi_home.png" alt="" srcset="">
+        </div>
+        <p class="downTextH" id="downTextH">Home</p>
+        <p class="downTextA" id="downTextA">Add</p>
+    </div>
+    
+</body>
+<script>
+    function addrow(){
+
+    //    var x = document.createElement("TBODY");
+  var y = document.createElement("TR");
+  var z1 = document.createElement("TD");
+  var z2 = document.createElement("TD");
+  var z3 = document.createElement("TD");
+  var z4 = document.createElement("TD");
+  z1.innerHTML = "03/01/2022";
+  y.appendChild(z1);
+
+  z2.innerHTML = PlustitleVVV;
+  y.appendChild(z2);
+
+  z3.innerHTML = PlusamountVVV;
+  y.appendChild(z3);
+  z4.innerHTML = "ok";
+  y.appendChild(z4);
+
+  //x.appendChild(y);
+  document.getElementById("table").appendChild(y);
+
+
+  z1.setAttribute('class', 'tdDate');
+  z2.setAttribute('class', 'tdExpense');
+  z3.setAttribute('class', 'tdAmount'); 
+  y.setAttribute('class', 'trNormal');
+  z4.setAttribute('class', 'tdEditBtn');
+
+
+
+
+        /*
+    var display = document.getElementById("table");
+    var newRaw = display.insertRaw( raw);
+    
+    var cell1 = newRaw.insertCell(0);
+    var cell2 = newRaw.insertCell(1);
+    var cell3 = newRaw.insertCell(2);
+    var cell4 = newRaw.insertCell(3);
+
+    cell1.innerHTML = PlustitleVVV;
+    cell2.innerHTML = PlusamountVVV;
+*/
+}
+</script>
+</html>
