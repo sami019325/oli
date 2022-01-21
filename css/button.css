@@ -76,7 +76,7 @@ height: 52px;
 left: 5%;
 bottom: 60px;
 opacity: .9;
-background-image: url("/wideImg.png");
+background-image: url("wideImg.png");
 border-radius: 36px;
 background-repeat: no-repeat;
   background-size: 110% 60px;
