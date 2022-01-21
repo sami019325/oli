@@ -22,15 +22,21 @@
         <div class="areaOfTable">
                              <table id="table"> 
                                  <tr class="trNormal">
-                                     <td class="tdDate">03/01/2022</td>
-                                     <td class="tdExpense"> dhaka, tour er total cost lekha holo ekhane</td>
-                                     <td class="tdAmount"> 500000</td>
-                                     <td class="tdEditBtn"> ok</td>
+                                     <td class="tdDate">01/01/2022</td>
+                                     <td class="tdExpense"> This is how table looks like and you can note here</td>
+                                     <td class="tdAmount"> nOnE</td>
+                                     <td class="tdEditBtn"> Ok</td>
                                  </tr>
                                  
+                                 <tr class="hidenTR">
+                                   
+                                    <td  colspan="4"> 🙅nO mOrE🙅 </td>
+                                   
+                                </tr>
 
 
                                </table>
+
          </div>
 
 
@@ -73,7 +79,7 @@
     </div>
     <div class="bgBar">
         <div class="nevigationBar"></div>
-        <div class="switchBar"></div>
+        <img src="wideImg.png" class="switchBar"></img>
         <div class="switchBarFake">
            <div class="addBtn" id="addBtn" onclick="showhome()"> </div> 
            <div class="homeBtn" id="homeBtn" onclick="showAdd()"> </div> 
@@ -88,13 +94,24 @@
 <script>
     function addrow(){
 
+
+
+
+        var xTable=document.getElementById('table');
+    var body = xTable.tBodies[0]
+    var rows = body.rows
+    
+    // pick the last and prepend
+    rows[rows.length - 1]
+
+
     //    var x = document.createElement("TBODY");
   var y = document.createElement("TR");
   var z1 = document.createElement("TD");
   var z2 = document.createElement("TD");
   var z3 = document.createElement("TD");
   var z4 = document.createElement("TD");
-  z1.innerHTML = "03/01/2022";
+  z1.innerHTML = time;
   y.appendChild(z1);
 
   z2.innerHTML = PlustitleVVV;
@@ -102,11 +119,11 @@
 
   z3.innerHTML = PlusamountVVV;
   y.appendChild(z3);
-  z4.innerHTML = "ok";
+  z4.innerHTML = "Ok";
   y.appendChild(z4);
 
   //x.appendChild(y);
-  document.getElementById("table").appendChild(y);
+  document.getElementById("table").appendChild(y).rows;
 
 
   z1.setAttribute('class', 'tdDate');
